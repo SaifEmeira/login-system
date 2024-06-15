@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    
+    <div class="my-5 container text-center">
+        <div class="main m-auto w-75 p-5 ">
+            <h1>Smart Login System</h1>
+            <input type="text" oninput="validName()" id="signupName" class="form-control my-3" placeholder="Enter your name">
+
+            <input type="email" id="signupEmail" oninput="validEmail()" class="form-control my-3" placeholder="Enter your email">
+
+            <input type="password" id="signupPassword" oninput="validPassword()" class="form-control my-3" placeholder="Enter your password">
+
+
+            <p id="invalid-signup" class=" d-none text-danger m-3">All inputs is required</p>
+            <p id="alreadySignup" class=" d-none text-danger m-3">Already Signed Up</p>
+            <p id="successSignup" class=" d-none text-success m-3">success</p>
+
+
+            
+            <button id="signupBtn" onclick="signup()" class="btn btn-outline-info w-100 my-2"> Sign up</button>
+
+            <p class="text-white">You have an acoount?  <a class="text-white" href="./index.html">Sign in</a> </p>
+
+        </div>
+    </div>
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/main.js"></script>
+</body>
+</html>
